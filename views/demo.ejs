@@ -1,0 +1,23 @@
+<%- include('./reuseComponent/courseHeader') %>
+    <div class="democontainer">
+  <% statData.map((item)=>{ %>
+    <form action="/demo" method="post">
+      <label for="courseName"></label>
+      <input type="text" value=" <%-item.courseName%>" name="courseName" placeholder="Enter text here" required>
+      <p>DESCRIPTION: Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, dolorem?</p>
+      <h4><%-item.price%></h4>
+
+      <label for="courseType"></label>
+      <select  name="courseType" required>
+       <% item.courseType.map((value)=>{ %>
+            <option value="<%-value%>"><%-value%></option>
+            <% }) %>
+        
+      </select>
+
+      <input type="submit" value="Enroll" class="enroll-button">
+  </form>
+ <% }) %>
+</div>
+</body>
+</html>

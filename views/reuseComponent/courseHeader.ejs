@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Pathshala</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            font-size: large;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        .container,.democontainer {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .course-grid,.democontainer {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 20px;
+        }
+
+        .course {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .course h3 {
+            margin: 0;
+        }
+
+        .enroll-button {
+            background-color: #007BFF;
+            color: #fff;
+            padding: 10px 10px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .enroll-button:hover {
+            background-color: #0056b3;
+        }
+        a{
+            color: white;
+            text-decoration: none;
+        }
+        .courses{
+            display: flex;
+            gap:40px;
+            cursor: pointer;
+        }
+        input{
+            border:none;
+            outline: none;
+            font-size: 20px;
+            font-weight: bold;
+        }
+        select{
+            display: block;
+            margin-bottom: 10px;
+            font-size: 15px;
+        }
+        form {
+            max-width: 400px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        h4{
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div>
+            <h1>डिजिटल पाठशाला</h1>
+            <p>Learn and Grow with Us</p>
+        </div>
+        <div class="courses">
+        <a href="/learning">My learning</a>
+        <a href="/demo">Available Courses</a>
+        </div>
+    </header>

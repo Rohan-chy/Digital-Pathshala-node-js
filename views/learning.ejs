@@ -1,0 +1,18 @@
+<%- include('./reuseComponent/courseHeader') %>
+    
+    <div class="container">
+        <h2>Enrolled Courses</h2>
+        <div class="course-grid">
+            <% courseData.map((item,i)=>{ %>
+                <div class="course">
+                    <h3>Course Name: <%- item.courseName %></h3>
+                    <p>Course Type: <%- item.courseType %></p>
+                    
+                    <button class="enroll-button"><a href="/update/<%-item.id %>">Update</a></button>
+                    <button class="enroll-button"><a href="/delete/<%-item.id %>">Delete</a></button>
+                </div>
+          <%  }) %>
+        </div>
+    </div>
+</body>
+</html>
