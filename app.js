@@ -60,7 +60,7 @@ app.post('/login',async(req,res)=>{
     if(data.length > 0){
         const passwordCheck=bcrypt.compareSync(password,data[0].password)
         if(passwordCheck){
-            res.redirect('/learning')
+            res.redirect('/demo')
         }
         else{
             res.send("wrong password")
