@@ -25,7 +25,7 @@ app.post('/',async(req,res)=>{
     if(!email || !password || !confirmpassword){
         res.send("please enter email and password")
     }else if(password !== confirmpassword){
-        res.send("match not matched")
+        res.send("password not matched")
     }else{
         const data=await clients.findAll({
             where:{
